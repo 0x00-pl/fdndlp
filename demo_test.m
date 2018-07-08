@@ -52,4 +52,3 @@ plot(angle(mean(fin1)))
 
 % fin = fft(ain, 512, 1);
 % plot(abs(fin))
-imagesc(fin1)
