@@ -29,7 +29,7 @@ cfg.N = floor((cfg.audio_size_origin-cfg.fft_size)/cfg.shift)+1;
 
 fin = zeros(cfg.fft_size, cfg.N, size(ain, 2));
 for i = 0:cfg.N-1
-    tmp = ain(i*cfg.shift+1:(i*cfg.shift)+cfg.fft_size, :);
+    tmp = hann(cfg.fft_size).*ain(i*cfg.shift+1:(i*cfg.shift)+cfg.fft_size, :);
     ftmp = fft(tmp, cfg.fft_size, 1);
     fin(:, i+1, :) = reshape(ftmp, cfg.fft_size, 1, []);
 end
