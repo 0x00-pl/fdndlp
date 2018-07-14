@@ -54,9 +54,9 @@ disp('Read Audio Files...')
 
 if sig_multi_mode
     disp(file_name)
-    % audioread返回
-    % x：返回为 m×n 矩阵，其中 m 是读取的音频样本数，n 是文件中的音频通道数
-    % fs：采样率
+    % audioread锟斤拷锟斤拷
+    % x锟斤拷锟斤拷锟斤拷为 m锟斤拷n 锟斤拷锟斤拷锟斤拷锟斤拷 m 锟角讹拷取锟斤拷锟斤拷频锟斤拷锟斤拷锟斤拷锟斤拷n 锟斤拷锟侥硷拷锟叫碉拷锟斤拷频通锟斤拷锟斤拷
+    % fs锟斤拷锟斤拷锟斤拷锟斤拷
     [x, fs] = audioread(file_name);
     
     fid = fopen('wav_file_in.txt','w');
